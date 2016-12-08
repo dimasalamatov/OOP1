@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClasses", "SimpleClasses\SimpleClasses.csproj", "{57F3737F-3C13-470B-A063-8EA4A9A7862A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{3C4687E0-559E-418B-8529-1770F7B0EDAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{57F3737F-3C13-470B-A063-8EA4A9A7862A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F3737F-3C13-470B-A063-8EA4A9A7862A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F3737F-3C13-470B-A063-8EA4A9A7862A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4687E0-559E-418B-8529-1770F7B0EDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4687E0-559E-418B-8529-1770F7B0EDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4687E0-559E-418B-8529-1770F7B0EDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4687E0-559E-418B-8529-1770F7B0EDAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

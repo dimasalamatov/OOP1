@@ -169,6 +169,46 @@ namespace SimpleClasses
             public int GetYear() { return year_of_birth; }
             public int GetSalary() { return salary; }
 
+            public double GetSalaryInDollars
+            {
+                get
+                {
+                    return Math.Round((salary / 25.78),2);
+                }
+            }
+            public int SetSal
+            {
+                set
+                {
+                    if (value > 0)
+                    {
+                        salary = value;
+                    }
+                    else { salary = 0; }
+                }
+            }
+            public int YearOfBirth
+            {
+                get
+                {
+                    return year_of_birth;
+                }
+                set
+                {
+                    if (value > 2016 || value < 1900)
+                    {
+                        Console.WriteLine("Невірно вказаний рік народження");
+                    }
+                    else
+                    {
+                        year_of_birth = value;
+                    }
+                }
+            }
+            public string Surname { get; set; }
+
+
+
             public void SetName(string n) { name = n; }
             public void SetSurname(string s) { surname = s; }
             public void SetMiddlename(string m) { middlename = m; }
@@ -640,8 +680,12 @@ namespace SimpleClasses
             Person P1 = new Person(P);
             P1.SetName("Петро");
             P1.SetSalary(7500);
+            P1.YearOfBirth = 1800;
+            Console.WriteLine(P1.YearOfBirth);
             Console.WriteLine();
             P1.Show();
+            P1.SetSal = -2000;
+            Console.WriteLine("Зарплата в доларах для {0} {1} - {2}", P1.GetName(), P1.GetSurname(), P1.GetSalaryInDollars);
             ArrClass arr = new ArrClass();
             arr.InputAb();
             arr.ShowAb();
@@ -649,6 +693,8 @@ namespace SimpleClasses
             arr.ShowBs();
             arr.InputPs();
             arr.ShowPs();
+            P1.Surname = "Васильчук";
+            Console.WriteLine(P1.Surname);
             Console.WriteLine("Для здійснення пошуку натисніть 'п'");
             char p = char.Parse(Console.ReadLine());
             if (p == 'g' || p == 'п')
